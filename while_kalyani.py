@@ -2,21 +2,23 @@ name=str(input("enter the any name:"))
 gender=str(input("enter the gender (M/F):"))
 age=int(input("enter the age:"))
 pro_gram=0
-pro_name = []
+pro_name =" "
+num =0
 status = True
-while status:  
+while status: 
         product = input("enter the product:")
-        pro_name.append(product)                          #list_append
+        num+=1
         product_gram =int(input("enter the product gram:"))  
         pro_gram += product_gram
+        pro_name += str(num)+ ". " + product +" - " + str(product_gram)+"gm " + " , "
         choice = input("do you want to more add Y/N :")
         if choice == "Y" :
             status = True
         else :
-            status = False 
-gold_price = 5000
+            status = False
+gold_price = int(input("Enter current price of gold per gram : ")
 total_gold_price =gold_price*pro_gram
-making_charges=845
+making_charges=int(input("Enter current making charges per gram : ")
 total_making_charges=product_gram*making_charges
 
 if gender=="M":
